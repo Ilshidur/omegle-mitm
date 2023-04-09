@@ -1,0 +1,32 @@
+{
+  "name": "omegle-mitm",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "run": "node src/mitm.js",
+    "run:dev": "nodemon --signal SIGINT -L src/mitm.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ilshidur/omegle-mitm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ilshidur/omegle-mitm/issues"
+  },
+  "homepage": "https://github.com/Ilshidur/omegle-mitm#readme",
+  "dependencies": {
+    "axios": "0.27.2",
+    "canvas": "2.9.1",
+    "close-with-grace": "^1.1.0",
+    "exit-hook": "^3.0.0",
+    "signal-exit": "^3.0.7",
+    "wrtc": "0.4.7"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.16"
+  }
+}

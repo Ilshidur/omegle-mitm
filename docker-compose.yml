@@ -1,0 +1,20 @@
+version: '3.3'
+
+services:
+  omegle:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: omegle
+    volumes:
+      - ./package.json:/home/app/package.json
+      - ./package-lock.json:/home/app/package-lock.json
+      - ./node_modules:/home/app/node_modules
+      - ./src:/home/app/src
+      - ./medias:/home/app/medias
+    networks:
+      - internal
+
+networks:
+  internal:
+    external: false
